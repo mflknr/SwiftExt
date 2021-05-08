@@ -1,0 +1,20 @@
+module: ${}
+author: Marius Felkner
+author_url: https://www.mflknr.de
+github_url: https://github.com/mflknr/${}/
+readme: README.md
+skip_undocumented: true
+hide_documentation_coverage: false
+theme: apple
+output: Documentation
+exclude:
+ - ${}/Storyboards/*
+ - ${}/Views/*
+swift_version: 5.3.2
+clean: true
+min_acl: internal
+xcodebuild_arguments:
+  - -project
+  - ${}.xcodeproj
+  - -scheme
+  - ${}
